@@ -2,7 +2,7 @@
 body {
   background-color: #f8f8f8;
   color: #333;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .header {
@@ -42,11 +42,12 @@ body {
 
 .add__task_wrapper {
   display: flex;
+  margin: 20px 0 0;
 }
 /* Reset Style Start */
 ul {
   margin:0;
-  padding: 0px;
+  padding: 0;
 }
 
 li,
@@ -66,7 +67,7 @@ button{
   color: #888;
   font-size: 15px;
   width: 60px;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
   cursor: pointer;
 }
 
@@ -95,7 +96,7 @@ button{
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
   color: #888;
 }
 
@@ -119,14 +120,14 @@ button{
   align-items: center;
 }
 
-.checkbox,
+.task__checkbox,
 .task,
 .task__btn,
 .delete__btn{
   vertical-align: middle;
 }
 
-.checkbox {
+.task__checkbox {
   margin: 0 10px;
 }
 
@@ -153,16 +154,24 @@ button{
   color: #888;
 }
 
+.completed__tasks .task__name {
+  text-decoration: none;
+}
+
+.completed__tasks .task__name:focus {
+  color: #333
+}
+
 /* Edit Task */
-.tasks__list_item .task_name {
+.tasks__list_item .task__name {
   display: none;
 }
 
-.tasks__list_item.edit_mode .task_name {
+.tasks__list_item.edit-mode .task {
+  display: none;
+}
+
+.tasks__list_item.edit-mode .task__name {
   display: inline-block;
   width: 224px;
-}
-
-.tasks__list_item.edit__mode .task {
-  display: none;
 }
