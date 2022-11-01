@@ -49,11 +49,13 @@ ul {
   padding: 0px;
 }
 
-li, h3 {
+li,
+h3 {
   list-style: none;
 }
 
-input,button{
+input,
+button{
   outline: none;
 }
 
@@ -119,7 +121,9 @@ input#new-task {
   align-items: center;
 }
 
-.checkbox, task, btn {
+.checkbox,
+task,
+btn {
   vertical-align: middle;
 }
 
