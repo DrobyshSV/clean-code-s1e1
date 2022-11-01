@@ -43,7 +43,7 @@ body {
 .add__task_wrapper {
   display: flex;
 }
-
+/* Reset Style Start */
 ul {
   margin:0;
   padding: 0px;
@@ -58,8 +58,9 @@ input,
 button{
   outline: none;
 }
-
-.btn {
+/* Reset Style End */
+.task__btn,
+.delete__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -69,7 +70,8 @@ button{
   cursor: pointer;
 }
 
-btn:hover {
+.task__btn:hover,
+.delete__btn:hover {
   color: #3a3a3a;
 }
 
@@ -84,7 +86,7 @@ btn:hover {
   text-transform: uppercase;
 }
 
-.task {
+.task__name {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -97,17 +99,13 @@ btn:hover {
   color: #888;
 }
 
-.task:focus {
+.task__name:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
 
-input#new__task {
+#new__task {
   width: 318px;
 }
 
@@ -122,8 +120,9 @@ input#new__task {
 }
 
 .checkbox,
-task,
-btn {
+.task,
+.task__btn,
+.delete__btn{
   vertical-align: middle;
 }
 
@@ -135,10 +134,6 @@ btn {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  width: 226px;
-}
-
-li >    input[type="text"] {
   width: 226px;
 }
 
