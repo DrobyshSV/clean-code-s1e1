@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: "Lato", sans-serif;
@@ -46,7 +46,7 @@ body {
 }
 /* Reset Style Start */
 ul {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -159,7 +159,7 @@ button{
 }
 
 .completed__tasks .task__name:focus {
-  color: #333
+  color: #333;
 }
 
 /* Edit Task */
